@@ -1,0 +1,16 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\vinso\Documents\githubfolder\kicad-hall-effect-sensor\Draft1.net
+Start Time: Thu Nov  5 19:32:57 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+.step 
+Total elapsed time: 0.379 seconds.
+
+Files loaded:
+C:\Users\vinso\Documents\githubfolder\kicad-hall-effect-sensor\Draft1.net
+C:\Users\vinso\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\vinso\AppData\Local\LTspice\lib\cmp\standard.mos
+
