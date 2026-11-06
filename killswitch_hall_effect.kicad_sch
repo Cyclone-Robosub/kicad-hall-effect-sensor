@@ -439,27 +439,36 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Marcolibrary:APS11205"
+		(symbol "halleffectlibrary:A1121EUA"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "HE"
-				(at -8.128 6.35 0)
+				(at 3.556 -7.874 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "A1121"
-				(at -9.652 4.064 0)
+			(property "Value" "A1121EUA"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "footprintsLib:Untitled"
+				(at 0 -15.494 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -468,8 +477,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.allegromicro.com/~/media/Files/Datasheets/A112x-Datasheet.ashx"
-				(at 0 0 0)
+			(property "Description" "This is a hall effect sensor that is output low with high magnetic flux and output high with low magnetic flux."
+				(at 0.254 -18.796 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -477,19 +486,10 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "This is a Hall effect unipolar switch sensor that outputs a binary on/off voltage."
-				(at -1.27 -16.764 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "APS11205_0_1"
+			(symbol "A1121EUA_0_1"
 				(rectangle
-					(start -6.35 12.7)
-					(end 6.35 0)
+					(start -6.35 6.35)
+					(end 6.35 -6.35)
 					(stroke
 						(width 0)
 						(type default)
@@ -499,9 +499,9 @@
 					)
 				)
 			)
-			(symbol "APS11205_1_1"
+			(symbol "A1121EUA_1_1"
 				(pin input line
-					(at 0 15.24 270)
+					(at 0 8.89 270)
 					(length 2.54)
 					(name "Vcc"
 						(effects
@@ -519,7 +519,7 @@
 					)
 				)
 				(pin input line
-					(at 0 -2.54 90)
+					(at 0 -8.89 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -537,7 +537,7 @@
 					)
 				)
 				(pin input line
-					(at 8.89 6.35 180)
+					(at 8.89 0 180)
 					(length 2.54)
 					(name "Vout"
 						(effects
@@ -547,6 +547,142 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "halleffectlibrary:TC7SZ17F"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "DB"
+				(at 0 -5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TC7SZ17F"
+				(at 0.254 -7.366 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "This is a 1.65-5V buffer by Toshiba"
+				(at 0.508 -9.652 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TC7SZ17F_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TC7SZ17F_1_1"
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "Vcc"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -660,10 +796,22 @@
 		)
 	)
 	(junction
+		(at 115.57 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6404b6a0-5459-4112-b15c-1e7f27d9748e")
+	)
+	(junction
 		(at 115.57 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76242b1e-0086-4a5a-9bc2-f08bcd59af7c")
+	)
+	(junction
+		(at 123.19 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fcaa8cd-5d59-4a6d-8414-3b9a072def77")
 	)
 	(junction
 		(at 104.14 43.18)
@@ -676,6 +824,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a943eaa0-f7b5-4327-9944-47d41fc8c679")
+	)
+	(junction
+		(at 115.57 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6200802-a55b-4f1e-9498-7ef383007a82")
 	)
 	(junction
 		(at 104.14 72.39)
@@ -725,16 +879,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 58.42) (xy 121.92 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37636d1c-16e3-4d65-8dc0-7f7cc3ff7a11")
-	)
-	(wire
-		(pts
 			(xy 115.57 60.96) (xy 115.57 55.88)
 		)
 		(stroke
@@ -745,13 +889,53 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 64.77) (xy 83.82 72.39)
+			(xy 83.82 57.15) (xy 83.82 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "430e259b-b050-4d3f-94e1-5f5202b0654c")
+	)
+	(wire
+		(pts
+			(xy 123.19 43.18) (xy 139.7 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "439243ef-382d-4cf2-95bf-cfb1fce09704")
+	)
+	(wire
+		(pts
+			(xy 83.82 43.18) (xy 83.82 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44c58d38-5cb0-4214-9b46-48af7c057d1b")
+	)
+	(wire
+		(pts
+			(xy 115.57 63.5) (xy 123.19 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "459b0e4f-c29a-4ad6-a97f-9b60212508c0")
+	)
+	(wire
+		(pts
+			(xy 123.19 43.18) (xy 123.19 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ef5ac0a-f54d-47b4-9506-08374f522950")
 	)
 	(wire
 		(pts
@@ -775,7 +959,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 43.18) (xy 121.92 43.18)
+			(xy 115.57 43.18) (xy 123.19 43.18)
 		)
 		(stroke
 			(width 0)
@@ -795,33 +979,43 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 63.5) (xy 121.92 63.5)
+			(xy 139.7 43.18) (xy 139.7 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8236fbd3-2e7a-43a1-ac22-209d5f37597a")
+		(uuid "96e6c744-9382-4c2c-9f21-bf04612dc470")
 	)
 	(wire
 		(pts
-			(xy 83.82 43.18) (xy 83.82 57.15)
+			(xy 138.43 60.96) (xy 139.7 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89b647cc-82b9-437d-a337-1ccadac95646")
+		(uuid "9736d221-ff34-47c0-9812-5f543e4623fc")
 	)
 	(wire
 		(pts
-			(xy 115.57 72.39) (xy 115.57 63.5)
+			(xy 115.57 63.5) (xy 115.57 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9aa9f4cc-7a09-4924-97cb-8fb1d89be5cb")
+	)
+	(wire
+		(pts
+			(xy 115.57 72.39) (xy 139.7 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c666841a-5195-49e0-8029-7d9aa7733606")
 	)
 	(wire
 		(pts
@@ -835,13 +1029,33 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 60.96) (xy 121.92 60.96)
+			(xy 139.7 63.5) (xy 139.7 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e63b8167-3dcf-4d02-9a87-7c7114ddcf9a")
+		(uuid "d7999bee-ad87-453b-8375-e03b0c5b2cde")
+	)
+	(wire
+		(pts
+			(xy 115.57 60.96) (xy 123.19 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db810480-1281-4866-a357-b8d50745ce26")
+	)
+	(wire
+		(pts
+			(xy 115.57 63.5) (xy 115.57 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1ed600d-e8da-41fd-900f-2fba4185bddc")
 	)
 	(wire
 		(pts
@@ -925,7 +1139,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 127 60.96 0)
+		(at 144.78 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -934,7 +1148,7 @@
 		(fields_autoplaced yes)
 		(uuid "61bb63a8-a97c-4bd8-9f6a-99f3909f934e")
 		(property "Reference" "J1"
-			(at 129.54 59.6899 0)
+			(at 147.32 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -943,7 +1157,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 129.54 62.2299 0)
+			(at 147.32 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -952,7 +1166,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
-			(at 127 60.96 0)
+			(at 144.78 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -961,7 +1175,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 60.96 0)
+			(at 144.78 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -970,7 +1184,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 127 60.96 0)
+			(at 144.78 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -991,6 +1205,153 @@
 			(project ""
 				(path "/85c3fba5-582b-4f50-8492-05fbeb8d3571"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "halleffectlibrary:TC7SZ17F")
+		(at 130.81 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "910b9cdd-50d1-4fbd-aa50-febd37b02ccd")
+		(property "Reference" "DB1"
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TC7SZ17F"
+			(at 130.81 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "This is a 1.65-5V buffer by Toshiba"
+			(at 131.318 70.612 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "3c6eb1e6-fbba-4742-a907-5df9ded9ee7a")
+		)
+		(pin ""
+			(uuid "23336b01-dcb2-41f3-8fc1-a02e7b840605")
+		)
+		(pin ""
+			(uuid "4b4156ff-67fd-4906-8ee7-f6e15d8fc4bf")
+		)
+		(pin ""
+			(uuid "e929fc8a-e97b-4766-9917-a0b80979ce4a")
+		)
+		(instances
+			(project ""
+				(path "/85c3fba5-582b-4f50-8492-05fbeb8d3571"
+					(reference "DB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "halleffectlibrary:A1121EUA")
+		(at 104.14 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad3f300e-ff0b-4e48-8a2b-a6ac062daa68")
+		(property "Reference" "HE1"
+			(at 96.52 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "A1121EUA"
+			(at 96.52 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprintsLib:Untitled"
+			(at 104.14 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "This is a hall effect sensor that is output low with high magnetic flux and output high with low magnetic flux."
+			(at 104.394 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "792770fe-8ecc-4a41-a1bd-00a2d266f5b5")
+		)
+		(pin "2"
+			(uuid "4c40f1a3-e85f-45be-b06e-6be3a86d4630")
+		)
+		(pin "3"
+			(uuid "e030f69d-1c77-4ffd-b60e-d0f987f13a23")
+		)
+		(instances
+			(project ""
+				(path "/85c3fba5-582b-4f50-8492-05fbeb8d3571"
+					(reference "HE1")
 					(unit 1)
 				)
 			)
@@ -1063,81 +1424,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Marcolibrary:APS11205")
-		(at 104.14 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d01e7d0f-88ea-4362-8e97-bff7a05ac323")
-		(property "Reference" "HE1"
-			(at 96.52 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "A1121"
-			(at 96.52 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprintsLib:Untitled"
-			(at 104.14 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.allegromicro.com/~/media/Files/Datasheets/A112x-Datasheet.ashx"
-			(at 104.14 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "This is a Hall effect unipolar switch sensor that outputs a binary on/off voltage."
-			(at 102.87 84.074 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "be81263c-d595-4910-b0cf-7cc62b00d444")
-		)
-		(pin "1"
-			(uuid "67fff345-1b64-4e2c-b6f1-9fa6a750a7f5")
-		)
-		(pin "3"
-			(uuid "20e3111c-0fe0-4a9e-93e0-57c5ec3b8488")
-		)
-		(instances
-			(project ""
-				(path "/85c3fba5-582b-4f50-8492-05fbeb8d3571"
-					(reference "HE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 83.82 60.96 0)
+		(at 83.82 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1146,7 +1434,7 @@
 		(fields_autoplaced yes)
 		(uuid "d195f442-7189-4e72-b036-0ef0320bf59f")
 		(property "Reference" "C1"
-			(at 87.63 59.6899 0)
+			(at 87.63 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1155,7 +1443,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 87.63 62.2299 0)
+			(at 87.63 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1164,7 +1452,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 84.7852 64.77 0)
+			(at 84.7852 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1173,7 +1461,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 60.96 0)
+			(at 83.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1182,7 +1470,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 83.82 60.96 0)
+			(at 83.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
