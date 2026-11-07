@@ -132,8 +132,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "TC7SZ17F"
+			(at 0.254 -7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -158,8 +158,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "This is a 1.65-5V buffer by Toshiba"
+			(at 0.508 -9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)

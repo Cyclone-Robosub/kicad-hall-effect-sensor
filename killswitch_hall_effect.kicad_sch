@@ -621,14 +621,14 @@
 				(pin input line
 					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "Vcc"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -646,7 +646,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -664,7 +664,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -673,7 +673,25 @@
 					)
 				)
 				(pin output line
-					(at 7.62 0 180)
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "Vcc"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "Vout"
 						(effects
@@ -682,7 +700,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -808,12 +826,6 @@
 		(uuid "76242b1e-0086-4a5a-9bc2-f08bcd59af7c")
 	)
 	(junction
-		(at 123.19 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8fcaa8cd-5d59-4a6d-8414-3b9a072def77")
-	)
-	(junction
 		(at 104.14 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -826,16 +838,20 @@
 		(uuid "a943eaa0-f7b5-4327-9944-47d41fc8c679")
 	)
 	(junction
-		(at 115.57 63.5)
+		(at 139.7 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b6200802-a55b-4f1e-9498-7ef383007a82")
+		(uuid "ee9a8ac2-4afc-4602-8dfc-95fe19b54fe4")
 	)
 	(junction
 		(at 104.14 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6509afe-7bc0-41c5-8aeb-b51cabd2eb67")
+	)
+	(no_connect
+		(at 123.19 58.42)
+		(uuid "5322503f-f6fd-451c-a5f4-167ccf673b1f")
 	)
 	(wire
 		(pts
@@ -869,6 +885,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 60.96) (xy 138.43 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2531f96c-070b-447e-aa62-67ce43faa5d9")
+	)
+	(wire
+		(pts
 			(xy 104.14 72.39) (xy 104.14 74.93)
 		)
 		(stroke
@@ -899,16 +925,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 43.18) (xy 139.7 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "439243ef-382d-4cf2-95bf-cfb1fce09704")
-	)
-	(wire
-		(pts
 			(xy 83.82 43.18) (xy 83.82 49.53)
 		)
 		(stroke
@@ -926,16 +942,6 @@
 			(type default)
 		)
 		(uuid "459b0e4f-c29a-4ad6-a97f-9b60212508c0")
-	)
-	(wire
-		(pts
-			(xy 123.19 43.18) (xy 123.19 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ef5ac0a-f54d-47b4-9506-08374f522950")
 	)
 	(wire
 		(pts
@@ -959,7 +965,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 43.18) (xy 123.19 43.18)
+			(xy 115.57 43.18) (xy 139.7 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1049,13 +1055,13 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 63.5) (xy 115.57 60.96)
+			(xy 138.43 58.42) (xy 139.7 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1ed600d-e8da-41fd-900f-2fba4185bddc")
+		(uuid "e22f00b8-874a-4e21-affc-da42a549cf8d")
 	)
 	(wire
 		(pts
@@ -1236,7 +1242,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "footprintsLib:TC7SZ17F"
 			(at 130.81 60.96 0)
 			(effects
 				(font
@@ -1263,17 +1269,20 @@
 				(hide yes)
 			)
 		)
-		(pin ""
+		(pin "4"
 			(uuid "3c6eb1e6-fbba-4742-a907-5df9ded9ee7a")
 		)
-		(pin ""
+		(pin "1"
 			(uuid "23336b01-dcb2-41f3-8fc1-a02e7b840605")
 		)
-		(pin ""
+		(pin "2"
 			(uuid "4b4156ff-67fd-4906-8ee7-f6e15d8fc4bf")
 		)
-		(pin ""
+		(pin "3"
 			(uuid "e929fc8a-e97b-4766-9917-a0b80979ce4a")
+		)
+		(pin "5"
+			(uuid "737cc315-10da-452c-8229-0e269d1ca97d")
 		)
 		(instances
 			(project ""
